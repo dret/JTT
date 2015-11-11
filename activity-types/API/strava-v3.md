@@ -1,0 +1,31 @@
+[Strava V3](http://strava.github.io/api/v3/)
+=============
+
+* Ride
+* Run
+* Swim
+* Hike
+* Walk
+* AlpineSki
+* BackcountrySki
+* Canoeing
+* CrossCountrySkiing
+* Crossfit
+* Elliptical
+* IceSkate
+* InlineSkate
+* Kayaking
+* Kitesurf
+* NordicSki
+* RockClimbing
+* RollerSki
+* Rowing
+* Snowboard
+* Snowshoe
+* StairStepper
+* StandUpPaddling
+* Surfing
+* WeightTraining
+* Windsurf
+* Workout
+* Yoga
