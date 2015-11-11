@@ -9,8 +9,8 @@ An of activity types that are defined in services and APIs that are concerned wi
 So far the following </xsl:text>
       <xsl:value-of select="count(//API)"/>
       <xsl:text> APIs (with a total of </xsl:text>
-      <xsl:value-of select="count(//API/exercise)"/>
-      <xsl:text> exercise types) have been taken into consideration:&#xa;&#xa;</xsl:text>
+      <xsl:value-of select="count(//API/activity)"/>
+      <xsl:text> activity types) have been taken into consideration:&#xa;&#xa;</xsl:text>
       <xsl:for-each select="//API">
         <xsl:sort select="@name"/>
         <xsl:text>* [</xsl:text>
@@ -18,15 +18,15 @@ So far the following </xsl:text>
         <xsl:text>](API/</xsl:text>
         <xsl:value-of select="@id"/>
         <xsl:text>.md) (</xsl:text>
-        <xsl:value-of select="count(exercise)"/>
-        <xsl:text> exercise types)&#xa;</xsl:text>
+        <xsl:value-of select="count(activity)"/>
+        <xsl:text> activity types)&#xa;</xsl:text>
       </xsl:for-each>
     </xsl:result-document>
     <xsl:for-each select="//API">
       <xsl:result-document href="API/{@id}.md" method="text">
         <xsl:value-of select="concat('[', @name, '](', @href, ')')"/>
         <xsl:text>&#xa;=============&#xa;&#xa;</xsl:text>
-        <xsl:for-each select="exercise">
+        <xsl:for-each select="activity">
           <xsl:value-of select="concat('* ', @name, '&#xa;')"/>
         </xsl:for-each>
       </xsl:result-document>
