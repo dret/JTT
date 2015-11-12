@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- The source file for JTT data types. Use data-types.xsl to update README.md after any edits. -->
+<!-- The source file for JTT data types. Use data-types.xsl to update overview.md after any edits. -->
 <?xml-stylesheet type="text/xsl" href="data-types.xsl"?>
 <data-types>
   <!-- GPX 1.1 -->

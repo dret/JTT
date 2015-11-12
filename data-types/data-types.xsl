@@ -2,9 +2,9 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema" exclude-result-prefixes="xs" version="2.0">
   <xsl:output method="text" />
   <xsl:template match="data-types">
-    <xsl:result-document href="README.md">
-      <xsl:text># JTT Well-Known Data Types&#xa;&#xa;</xsl:text>
-      <xsl:text>A collection of well-known data types to be used in JTT.&#xa;&#xa;&#xa;</xsl:text>
+    <xsl:result-document href="overview.md">
+      <xsl:text># Data Types&#xa;&#xa;</xsl:text>
+      <xsl:text>A collection of existing data types to be used in JTT.&#xa;&#xa;&#xa;</xsl:text>
       <xsl:text>## Well-Known Values&#xa;</xsl:text>
       <xsl:text>-----------------&#xa;&#xa;</xsl:text>
       <xsl:text>| Value | Description | Source |&#xa;</xsl:text>
