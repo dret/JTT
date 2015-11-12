@@ -1,4 +1,4 @@
-# Existing Activity Types
+# JTT Well-known Activity Types
 
 This is an [overview](overview.md) of existing activity types in services and APIs.
 
