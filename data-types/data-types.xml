@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- The source file for JTT data types. Use data-types.xsl to update README.md after any edits. -->
+<?xml-stylesheet type="text/xsl" href="data-types.xsl"?>
+<data-types>
+  <!-- GPX 1.1 -->
+  <data-type id="time" src="gpx11">A time stamp (defined as xsd:dateTime in GPX 1.1) for an individual geographic point.</data-type>
+  <spec id="gpx11" href="http://www.topografix.com/gpx.asp">
+    <title>GPX 1.1</title>
+    <desc>GPX (the GPS Exchange Format) is a light-weight XML data format for the interchange of GPS data (waypoints, routes, and tracks) between applications and Web services on the Internet.</desc>
+  </spec>
+  <!-- TrackPointExtension -->
+  <data-type id="atemp" src="tpxv1">ATemp represents the air temperature in degree celsius.</data-type>
+  <data-type id="wtemp" src="tpxv1">WTemp represents the water temperature in degree celsius.</data-type>
+  <data-type id="depth" src="tpxv1">Depth represents the diving depth in meters.</data-type>
+  <data-type id="hr" src="tpxv1">HR represents the heart rate in beats per minute.</data-type>
+  <data-type id="cad" src="tpxv1">Cadence represents the cadence in revolutions per minute.</data-type>
+  <spec id="tpxv1" href="http://www.garmin.com/xmlschemas/TrackPointExtensionv1.xsd">
+    <title>TrackPointExtension V1</title>
+    <desc>This schema defines Garmin extensions to be used with the GPX 1.1 schema. The root element defined by this schema is intended to be used as a child element of the "extensions" elements in the trkpt element in the GPX 1.1 schema.</desc>
+  </spec>
+</data-types>
