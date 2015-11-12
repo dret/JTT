@@ -1,6 +1,6 @@
 # Activity Types
 
-An of activity types that are defined in services and APIs that are concerned with physical activities such as hiking, walking, running, or cycling.
+A collection of activity types that are defined in services and APIs that are concerned with physical activities such as hiking, walking, running, or cycling.
 
 So far the following 11 APIs (with a total of 468 activity types) have been taken into consideration:
 

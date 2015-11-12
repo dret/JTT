@@ -4,12 +4,12 @@
     <xsl:result-document href="overview.md" method="text">
       <xsl:text># Activity Types
 
-An of activity types that are defined in services and APIs that are concerned with physical activities such as hiking, walking, running, or cycling.
+A collection of activity types that are defined in services and APIs that are concerned with physical activities such as hiking, walking, running, or cycling.
 
 So far the following </xsl:text>
       <xsl:value-of select="count(//API)"/>
       <xsl:text> APIs (with a total of </xsl:text>
-      <xsl:value-of select="count(//API/activity)"/>
+      <xsl:value-of select="count(//API/activity-type)"/>
       <xsl:text> activity types) have been taken into consideration:&#xa;&#xa;</xsl:text>
       <xsl:for-each select="//API">
         <xsl:sort select="@name"/>
@@ -18,7 +18,7 @@ So far the following </xsl:text>
         <xsl:text>](API/</xsl:text>
         <xsl:value-of select="@id"/>
         <xsl:text>.md) (</xsl:text>
-        <xsl:value-of select="count(activity)"/>
+        <xsl:value-of select="count(activity-type)"/>
         <xsl:text> activity types)&#xa;</xsl:text>
       </xsl:for-each>
     </xsl:result-document>
@@ -26,7 +26,7 @@ So far the following </xsl:text>
       <xsl:result-document href="API/{@id}.md" method="text">
         <xsl:value-of select="concat('[', @name, '](', @href, ')')"/>
         <xsl:text>&#xa;=============&#xa;&#xa;</xsl:text>
-        <xsl:for-each select="activity">
+        <xsl:for-each select="activity-type">
           <xsl:value-of select="concat('* ', @name, '&#xa;')"/>
         </xsl:for-each>
       </xsl:result-document>
