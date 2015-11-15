@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<gpx-data-fields>
+<data-fields>
   <data-field xpath="@lat" type="latitude"/>
   <data-field xpath="@lat" type="longitude"/>
   <data-field xpath="ele" type="elevation"/>
   <data-field xpath="time" type="time"/>
   <data-field xpath="temperature" type="extensions/gpxtpx:TrackPointExtension/gpxtpx:atemp"/>
   <data-field xpath="HR" type="extensions/gpxtpx:TrackPointExtension/gpxtpx:hr"/>
-</gpx-data-fields>
+</data-fields>
