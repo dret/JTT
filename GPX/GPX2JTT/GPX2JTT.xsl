@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema" xpath-default-namespace="http://www.topografix.com/GPX/1/1" xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1" exclude-result-prefixes="xs" version="3.0" xmlns:my="tag:xslt-can-be-weird">
   <xsl:output method="text" />
-  <xsl:param name="data-fields" select="document('gpx-data-fields.xml')/gpx-datafields/data-field"/>
+  <xsl:param name="data-fields" select="document('data-fields.xml')/gpx-datafields/data-field"/>
   <xsl:param name="indent" select="xs:nonNegativeInteger(0)" as="xs:nonNegativeInteger"/>
   <xsl:param name="spacing" select="xs:nonNegativeInteger(2)" as="xs:nonNegativeInteger"/>
   
