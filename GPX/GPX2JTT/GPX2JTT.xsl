@@ -46,7 +46,6 @@
     <xsl:value-of select="concat(my:indent($indent), ']', if ( not(position() eq last()) ) then ',' else () ,'&#xa;')"/>
   </xsl:template>
   
-  
   <xsl:function name="my:indent">
     <xsl:param name="indent"/>
     <xsl:value-of select="for $i in 1 to $indent return ' '"/>
