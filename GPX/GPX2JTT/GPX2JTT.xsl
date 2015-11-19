@@ -40,7 +40,7 @@
     <xsl:value-of select="concat(my:indent($indent), '[&#xa;')"/>
     <xsl:for-each select="trkpt">
       <xsl:value-of select="concat(my:indent($indent), '  [ ')"/>
-      <xsl:value-of select="concat(@lat, ', ', @lon, ', ', ele, ', &quot;', time, '&quot;, ', extensions/gpxtpx:TrackPointExtension/gpxtpx:atemp, ', ', extensions/gpxtpx:TrackPointExtension/gpxtpx:hr)"/>
+      <xsl:value-of select="concat(@lat, ', ', @lon, ', ', ele/text(), ', &quot;', time/text(), '&quot;, ', extensions/gpxtpx:TrackPointExtension/gpxtpx:atemp/text(), ', ', extensions/gpxtpx:TrackPointExtension/gpxtpx:hr)"/>
       <xsl:value-of select="concat(']', if ( not(position() eq last()) ) then ',' else () ,'&#xa;')"/>
     </xsl:for-each>
     <xsl:value-of select="concat(my:indent($indent), ']', if ( not(position() eq last()) ) then ',' else () ,'&#xa;')"/>
