@@ -31,6 +31,17 @@
     <xsl:value-of select="concat(my:indent($indent), '} }&#xa;')"/>
   </xsl:template>
   
+  <xsl:template match="Lap">
+    <xsl:param name="indent"/>
+    <xsl:value-of select="concat(my:indent($indent), '[&#xa;')"/>
+    <xsl:for-each select="Track/Trackpoint">
+      <xsl:value-of select="concat(my:indent($indent), '  [ ')"/>
+      <xsl:value-of select="concat(Position/LatitudeDegrees/text(), ', ', Position/LongitudeDegrees/text(), ', ', AltitudeMeters/text(), ', &quot;', Time/text(), '&quot;, ', HeartRateBpm/Value/text(), ', ', DistanceMeters/text())"/>
+      <xsl:value-of select="concat(']', if ( not(position() eq last()) ) then ',' else () ,'&#xa;')"/>
+    </xsl:for-each>
+    <xsl:value-of select="concat(my:indent($indent), ']', if ( not(position() eq last()) ) then ',' else () ,'&#xa;')"/>
+  </xsl:template>
+  
   <xsl:function name="my:indent">
     <xsl:param name="indent"/>
     <xsl:value-of select=" for $i in 1 to $indent return ' ' "/>
