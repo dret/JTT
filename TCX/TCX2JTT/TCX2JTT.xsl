@@ -21,7 +21,7 @@
     <xsl:if test="exists(Lap)">
       <xsl:value-of select="concat(my:indent($indent), '  &quot;segments&quot; : [&#xa;')"/>
       <xsl:value-of select="concat(my:indent($indent), '    { &quot;data-fields&quot; : [')"/>
-      <xsl:text>"latitude", "longitude", "elevation", "HR", "distance"</xsl:text>
+      <xsl:text>"latitude", "longitude", "elevation", "time", "HR", "distance"</xsl:text>
       <xsl:text> ] }, &#xa;</xsl:text>
       <xsl:apply-templates select="Lap">
         <xsl:with-param name="indent" select="$indent + $spacing"/>
